@@ -1,0 +1,27 @@
+[
+    {
+        "bgColor":"#cc0000",
+        "textEve":"WORKSHOPS & MORE",
+        "eveNo":"75+ Events"
+    },
+    {
+        "bgColor":"#0000e6",
+        "textEve":"KIDS ZONE",
+        "eveNo":"10+ Events"
+    },
+    {
+        "bgColor":"#00cc00",
+        "textEve":"COMEDY SHOWS",
+        "eveNo":"195+ Events"
+    },
+    {
+        "bgColor":"#800080",
+        "textEve":"MUSIC SHOWS",
+        "eveNo":"70+ Events"
+    },
+    {
+        "bgColor":"#e65c00",
+        "textEve":"ESPORTS CENTER",
+        "eveNo":"4 Events"
+    }
+]

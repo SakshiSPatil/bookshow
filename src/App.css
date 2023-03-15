@@ -28,6 +28,13 @@
   color: #61dafb;
 }
 
+.bgimg {
+  background-image:linear-gradient(to right, #1A1A1A 18.97%, #1A1A1A 22.3%,  rgba(26, 26, 26, 0.0409746) 95.47%, #1A1A1A 100%), url(https://assets-in.bmscdn.com/iedb/movies/images/mobile/listing/xxlarge/tu-jhoothi-main-makkaar-et00347237-1675065103.jpg);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  object-position: left;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +43,4 @@
     transform: rotate(360deg);
   }
 }
+
