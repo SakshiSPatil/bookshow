@@ -1,4 +1,6 @@
 import { Carousel } from 'antd';
+import "../style/carouselSty.css"
+
 let imgStyle = {
   position: 'absolute',
   objectFit: 'fill',
@@ -12,23 +14,23 @@ const App = () => (
   <Carousel autoplay><div>
     <div style={{ display: 'flex' }}>
       <img style={{ imgStyle, width: '136px', height: '300px', display: 'inline-block', borderRadius: '5px', objectFit: 'cover', objectPosition: 'right' }} src="https://assets-in.bmscdn.com/promotions/cms/creatives/1677493993802_appaaaa.jpg" alt="..." />
-      <center><img style={{ imgStyle, width: '1241px', height: '300px', marginLeft: '13px', marginRight: '13px', borderRadius: '5px' }} src="https://assets-in.bmscdn.com/promotions/cms/creatives/1675080125347_app.jpg" alt="..." /></center>
+      <center><img className = "midImgSty" style={{ imgStyle, width: '1241px', height: '300px', marginLeft: '13px', marginRight: '13px', borderRadius: '5px' }} src="https://assets-in.bmscdn.com/promotions/cms/creatives/1675080125347_app.jpg" alt="..." /></center>
       <img style={{ imgStyle, width: '150px', height: '300px', display: 'inline-block', borderRadius: '5px', objectFit: 'cover', objectPosition: 'left' }} src="https://assets-in.bmscdn.com/promotions/cms/creatives/1677917497764_iifapp.jpg" alt="..." />
     </div>
   </div>
 
     <div>
       <div style={{ display: 'flex' }}>
-        <img style={{ imgStyle, width: '136px', height: '300px', display: 'inline-block', borderRadius: '5px', objectFit: 'cover', objectPosition: 'right' }} src="https://assets-in.bmscdn.com/promotions/cms/creatives/1675080125347_app.jpg" alt="..." />
-        <center><img style={{ imgStyle, width: '1241px', height: '300px', marginLeft: '13px', marginRight: '13px', borderRadius: '5px' }} src="https://assets-in.bmscdn.com/promotions/cms/creatives/1677917497764_iifapp.jpg" alt="..." /></center>
-        <img style={{ imgStyle, width: '150px', height: '300px', display: 'inline-block', borderRadius: '5px', objectFit: 'cover', objectPosition: 'left' }} src="https://assets-in.bmscdn.com/promotions/cms/creatives/1677493993802_appaaaa.jpg" alt="..." />
+        <img className = "lnrImg" style={{ imgStyle, width: '136px', height: '300px', display: 'inline-block', borderRadius: '5px', objectFit: 'cover', objectPosition: 'right' }} src="https://assets-in.bmscdn.com/promotions/cms/creatives/1675080125347_app.jpg" alt="..." />
+        <center><img className = "midImgSty" style={{ imgStyle, width: '1241px', height: '300px', marginLeft: '13px', marginRight: '13px', borderRadius: '5px' }} src="https://assets-in.bmscdn.com/promotions/cms/creatives/1677917497764_iifapp.jpg" alt="..." /></center>
+        <img className = "lnrImg" style={{ imgStyle, width: '150px', height: '300px', display: 'inline-block', borderRadius: '5px', objectFit: 'cover', objectPosition: 'left' }} src="https://assets-in.bmscdn.com/promotions/cms/creatives/1677493993802_appaaaa.jpg" alt="..." />
       </div>
     </div>
     <div>
       <div style={{ display: 'flex' }}>
-        <img style={{ imgStyle, width: '136px', height: '300px', display: 'inline-block', borderRadius: '5px', objectFit: 'cover', objectPosition: 'right' }} src="https://assets-in.bmscdn.com/promotions/cms/creatives/1677917497764_iifapp.jpg" alt="..." />
-        <center><img style={{ imgStyle, width: '1241px', height: '300px', marginLeft: '13px', marginRight: '13px', borderRadius: '5px' }} src="https://assets-in.bmscdn.com/promotions/cms/creatives/1677493993802_appaaaa.jpg" alt="..." /></center>
-        <img style={{ imgStyle, width: '150px', height: '300px', display: 'inline-block', borderRadius: '5px', objectFit: 'cover', objectPosition: 'left' }} src="https://assets-in.bmscdn.com/promotions/cms/creatives/1675080125347_app.jpg" alt="..." />
+        <img className = "lnrImg" style={{ imgStyle, width: '136px', height: '300px', display: 'inline-block', borderRadius: '5px', objectFit: 'cover', objectPosition: 'right' }} src="https://assets-in.bmscdn.com/promotions/cms/creatives/1677917497764_iifapp.jpg" alt="..." />
+        <center><img className = "midImgSty" style={{ imgStyle, width: '1241px', height: '300px', marginLeft: '13px', marginRight: '13px', borderRadius: '5px' }} src="https://assets-in.bmscdn.com/promotions/cms/creatives/1677493993802_appaaaa.jpg" alt="..." /></center>
+        <img className = "lnrImg" style={{ imgStyle, width: '150px', height: '300px', display: 'inline-block', borderRadius: '5px', objectFit: 'cover', objectPosition: 'left' }} src="https://assets-in.bmscdn.com/promotions/cms/creatives/1675080125347_app.jpg" alt="..." />
       </div>
     </div>
 

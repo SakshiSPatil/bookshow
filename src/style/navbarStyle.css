@@ -1,0 +1,35 @@
+@media only screen and (max-width : 600px) {
+    
+    .heading{
+        margin-left: 20px;
+        /* background-color: blue; */
+    }
+    
+    .navbtn{
+        margin-right: 20px;
+    }
+    
+}
+
+
+@media (min-width : 601px) and (max-width : 1000px) {
+    .heading{
+        margin-left: 50px;
+        /* background-color: red; */
+    }
+    
+    .navbtn{
+        margin-right: 50px;
+    }
+}
+
+@media only screen and (min-width : 1001px)  {
+    .heading{
+        margin-left: 130px;
+        /* background-color: yellowgreen; */
+    }
+    
+    .navbtn{
+        margin-right: 130px;
+    }
+}
