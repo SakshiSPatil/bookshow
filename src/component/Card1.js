@@ -1,22 +1,50 @@
 import { Card } from 'antd';
-// import { Link } from 'react-router-dom';
+import '../style/card1Sty.css';
+import React, { useEffect, useState } from "react";
+// const { Meta } = Card;
 
-const { Meta } = Card;
+const Card1 = () => {
+  const [user, setUser] = useState([]);
 
-const Card1 = (props) => (
+  const fetchData = () => {
+    return fetch("http://localhost:8000/")
+      .then((response) => response.json())
+      .then((data) => setUser(data.card1));
+  };
 
-  <Card
-    hoverable
-    style={{
-      width: 220,
-      height: 363
-    }}
+  useEffect(() => {
+    fetchData();
+  }, []);
 
-    cover={
-    <img style={{ borderRadius: '8px', width: '221px', height: '363px' }} alt="example" src={props.imgs} />}
-  >
-    <Meta style={{ fontSize: '16px', width: '220px', marginLeft: '-25px', marginTop: '25px' }} 
-    title={props.title} description={props.desc} />
-  </Card>
-);
+  return (
+    <>
+      {
+      user &&
+        user.length > 0 &&
+            user.map((value, index) => (
+              <div>
+                <Card
+                  hoverable
+                  className='antdCardSty'
+                  cover={
+                  <img 
+                    className = "card1ImgSty" 
+                    src={value.imgs} 
+                    alt="example" 
+                  />
+                }
+              >
+                {/* <Meta className='divStyMeta' style={{height:"0px"}}
+                title={props.title} description={props.desc} /> */}
+              </Card>
+                
+                <div>
+                  <h5 className="headingHomeSty">{value.title}</h5>
+                  <p className="paraHomeSty">{value.desc}</p>
+                </div>
+              </div>
+           ))}
+    </>
+  );
+};
 export default Card1;

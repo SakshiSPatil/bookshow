@@ -1,0 +1,80 @@
+.eveDiv1 {
+    display: flex, inline-block; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.eveDiv2 {
+    height: 225px;
+    width: 225px;
+    border-radius: 10px; 
+}
+
+.eveDiv3 {
+    color: White; 
+    font: 'Barlow Condensed'; 
+    padding: 20px; 
+    margin: 5px; 
+}
+
+.homeEvehead {
+    margin-left: 155px;
+}
+
+.homeEveDiv {
+    display: flex; 
+    justify-content: space-between; 
+    margin-left: 150px; 
+    margin-right: 130px;
+}
+
+.headFont{
+    font-Size: 30px;
+}
+
+.descFont{
+    font-size: 20px;
+}
+
+@media only screen and (max-width : 600px) {
+    .homeEvehead {
+        margin-left: 10px;
+        margin-top: -60px;
+    }
+    .homeEveDiv {
+        display: flex; 
+        justify-content: space-between; 
+        margin-left: 10px; 
+        margin-right: 13px;
+        margin-top: 0px;
+        overflow-x: scroll;
+        /* white-space: nowrap; */
+        overflow-y: hidden;
+    }
+
+    .homeEveDiv::-webkit-scrollbar {
+        display: none; 
+    }
+    
+    .eveDiv2 {
+        height: 115px;
+        width: 115px;
+        border-radius: 10px; 
+        margin: 5px;
+        
+    }
+    .eveDiv3 {
+        color: White; 
+        font: 'Barlow Condensed'; 
+        padding: 11px; 
+        margin: -5px;
+    }
+    .headFont{
+        font-Size: 15px;
+        padding-top: 5px;
+    }
+    
+    .descFont{
+        font-size: 14px;
+    }
+}    

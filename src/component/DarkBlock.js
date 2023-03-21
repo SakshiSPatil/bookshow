@@ -1,5 +1,6 @@
 import { Card } from "antd";
 import React, { useEffect, useState } from "react";
+import '../style/darkBlockSty.css';
 // const { Meta } = Card;
 const DarkBlock = () => {
   const [user, setUser] = useState([]);
@@ -7,7 +8,7 @@ const DarkBlock = () => {
   const fetchData = () => {
     return fetch("http://localhost:8000/")
       .then((response) => response.json())
-      .then((data) => setUser(data));
+      .then((data) => setUser(data.darkBlock));
   };
 
   useEffect(() => {
@@ -19,13 +20,10 @@ const DarkBlock = () => {
       {user &&
         user.length > 0 &&
         user.map((userData, index) => (
-          <div>
+          <div className="spaceSty">
             <Card
               hoverable
-              style={{
-                width: 230,
-                height: 345,
-              }}
+              className="antdSty"
               cover={
                 <img
                   style={{ borderRadius: "8px" }}
@@ -33,12 +31,16 @@ const DarkBlock = () => {
                   alt="example"
                 />
               }
-            ></Card>
-            <div style={{ backgroundColor: "rgb(43,49,72)", color: "white" }}>
-              <h5 style={{ marginTop: "10px", width: "230px" }}>
+            >
+              {/* <div style={{ backgroundColor: "rgb(43,49,72)" }}>
+                <Meta style={{color: "white"}} title={userData.title} description="English" />
+                </div> */}
+            </Card>
+            <div className="dBDiv">
+              <h5 className="dBHeading">
                 {userData.title}
               </h5>
-              <p>English</p>
+              <p className="dBPara">English</p>
             </div>
           </div>
         ))}

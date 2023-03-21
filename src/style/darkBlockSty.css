@@ -1,0 +1,99 @@
+.homeOuterDiv {
+        margin-top: 65px;
+        background-color: rgb(43,49,72);
+        color: white;
+}
+
+.homeImgDiv{
+    margin-left: 79px; 
+    margin-bottom: 15px;
+}
+
+.homeDBHeadSty {
+    margin-left: 155px; 
+    margin-bottom: 0px;
+}
+
+.homeDBParaSty {
+    margin-left: 155px; 
+    margin-bottom: 15px;
+}
+
+.homeDBDivSty {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 130px;
+}
+
+.antdSty {
+    width: 230px !important;
+    height: 345px !important;
+}
+
+.dBDiv {
+    background-color: rgb(43,49,72); 
+    color: white;
+}
+
+.dBHeading {
+    margin-top: 10px; 
+    width: 230px;
+}
+.dBPara{
+    font-size: 15px;
+}
+
+@media only screen and (max-width : 600px) {
+    .homeOuterDiv {
+        margin-top: 20px;
+        background-color: rgb(43,49,72);
+        color: white;
+    }
+    .homeImgDiv{
+        margin-left: 15px; 
+        margin-bottom: 5px;
+        /* max-width: 600px; */
+        
+    }
+    .homeDBHeadSty {
+        margin-left: 15px; 
+        margin-bottom: 0px;
+    }
+    .homeDBParaSty {
+        margin-left: 15px; 
+        margin-bottom: 15px;
+    }
+    .homeDBDivSty {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 22px;
+        margin-right: 15px;
+        overflow-x: scroll;
+        /* white-space: nowrap; */
+    }
+    .homeDBDivSty::-webkit-scrollbar {
+        display: none; 
+    }
+    .spaceSty{
+        padding: 10px 0px 10px 0px;   
+        margin-right: -55px;
+    }
+    .headImg {
+        width: 100%;
+    }
+    .antdSty {
+        width: 150px !important;
+        height: 223px !important;
+        margin: -2px !important;
+    }
+    .dBHeading {
+        margin-top: 10px; 
+        width: 230px;
+        font-size: 13px !important;
+    }
+    .dBPara{
+        font-size: 11px;
+    }
+}

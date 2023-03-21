@@ -1,0 +1,141 @@
+.home1Div {
+    margin-top: 60px; 
+    margin-bottom: 50px;
+}
+
+.home1Heading {
+    margin-left: 155px;
+}
+
+.homeDiv2 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 130px;
+}
+
+.homeHeading2 {
+    margin-top: 10px;
+    width: 220px;
+    font-size: 18px;
+}
+
+.homePara {
+    width: 220px; 
+    color: gray;
+}
+
+.compTag1 {
+    position: absolute; 
+    bottom: -1px; 
+    left: -1px; 
+    right: -9px; 
+    height: 35px; 
+    border-radius: 10px; 
+    border-top-left-radius: 0px; 
+    border-top-right-radius: 0px; 
+    font-size: 17px; 
+    padding: 6px;
+}
+
+.compTag2 {
+    position: absolute; 
+    bottom: 340px; 
+    left: 8px; 
+    right: 134px; 
+    height: 30px; 
+    border-radius: 0px; 
+    font-size: 17px; 
+    padding: 3px; 
+    opacity: 0.9;
+}
+
+.antdCardWTagSty {
+    margin: 5px;
+    width: 220px;
+    height: 380px;
+}
+
+.antdImageSty {
+    border-radius: 8px !important; 
+    height: 380px; 
+    position: relative;
+}
+
+@media only screen and (max-width : 600px) {
+    .home1Div {
+        margin-top: 30px; 
+        margin-bottom: 0px;
+    }
+    .home1Heading {
+        margin-left: 15px;
+    }
+    .homeDiv2 {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10px;
+        margin-right: 10px;
+        overflow-x: scroll;
+        /* white-space: nowrap; */
+        padding: 0px 10px 0px 8px;
+    }
+    .homeDiv2::-webkit-scrollbar {
+        display: none; 
+    }
+    .lastDivSpace{
+        margin-bottom: 180px;
+    }
+    .compTag1 {
+        position: absolute; 
+        bottom: -2px; 
+        left: -1px; 
+        right: -8px; 
+        height: 25px; 
+        border-radius: 10px; 
+        border-top-left-radius: 0px; 
+        border-top-right-radius: 0px; 
+        font-size: 12px; 
+        padding: 4px;
+    }
+    
+    .compTag2 {
+        position: absolute; 
+        bottom: 210px; 
+        left: 5px; 
+        right: 88px; 
+        height: 25px; 
+        border-radius: 0px; 
+        font-size: 11px; 
+        padding: 3px; 
+        opacity: 0.9;
+    }
+    
+    .antdCardWTagSty {
+        /* margin: 5px; */
+        width: 150px;
+        height: 240px;
+    }
+    
+    .antdImageSty {
+        border-radius: 8px !important; 
+        height: 240px; 
+        width: 150px !important;
+        position: relative;
+    }
+    .homeHeading2 {
+        margin-top: 10px;
+        width: 140px !important;
+        font-size: 13px;
+        font-weight: bold;
+        margin-left: 5px;
+    }
+    
+    .homePara {
+        width: 140px !important; 
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    .imgPadding {
+        padding: 0px 12px 0px 0px;
+    }
+}

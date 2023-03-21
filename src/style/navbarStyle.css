@@ -1,35 +1,48 @@
-@media only screen and (max-width : 600px) {
-    
-    .heading{
-        margin-left: 20px;
-        /* background-color: blue; */
-    }
-    
-    .navbtn{
-        margin-right: 20px;
-    }
-    
+.btnStyle {
+  color: white;
+  font-family: Roboto, arial;
+  font-size: 12px;
+  height: 25px;
+  width: 67px;
+  text-align: center;
+  display: block;
+  border-radius: 4px;
+  margin-right: 20px;
 }
 
-
-@media (min-width : 601px) and (max-width : 1000px) {
-    .heading{
-        margin-left: 50px;
-        /* background-color: red; */
-    }
-    
-    .navbtn{
-        margin-right: 50px;
-    }
+.logoStyle {
+  color: white;
+  margin-left: 20px;
+  font-family: Barlow Condensed;
+  font-size: 25px;
 }
 
-@media only screen and (min-width : 1001px)  {
-    .heading{
-        margin-left: 130px;
-        /* background-color: yellowgreen; */
-    }
-    
-    .navbtn{
-        margin-right: 130px;
-    }
+@media only screen and (max-width: 600px) {
+  .heading {
+    margin-left: 10px;
+  }
+
+  .navbtn {
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1000px) {
+  .heading {
+    margin-left: 50px;
+  }
+
+  .navbtn {
+    margin-right: 50px;
+  }
+}
+
+@media only screen and (min-width: 1001px) {
+  .heading {
+    margin-left: 130px;
+  }
+
+  .navbtn {
+    margin-right: 130px;
+  }
 }

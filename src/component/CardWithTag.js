@@ -1,19 +1,48 @@
-import { Card } from 'antd';
-import { Tag } from 'antd';
+import React, { useEffect, useState } from "react";
+import { Card } from "antd";
+import { Tag } from "antd";
+import "../style/cardWithTagSty.css";
 // const { Meta } = Card;
-const CardWithTag = (props) => (
-  <Card
-    hoverable
-    style={{
-      width: 220,
-      height: 380
-    }}
-    cover={<img style={{ borderRadius: '8px', height: '380px', position: 'relative' }} alt="example" src={props.imgs} />}
-  >
-    <Tag color="black" style={{ position: 'absolute', bottom: '-1px', left: '-1px', right: '-9px', height: '35px', borderRadius: '10px', borderTopLeftRadius: '0px', borderTopRightRadius: '0px', fontSize: '17px', padding: '6px' }}>{props.tag}</Tag>
-    <Tag color="black" style={{ position: 'absolute', bottom: '340px', left: '8px', right: '134px', height: '30px', borderRadius: '0px', fontSize: '17px', padding: '3px', opacity: '0.9' }}>ONLINE</Tag>
-    {/* <Meta title={props.title} description={props.desc} /> */}
-  </Card>
+const CardWithTag = () => {
+  const [user, setUser] = useState([]);
 
-);
+  const fetchData = () => {
+    return fetch("http://localhost:8000/")
+      .then((response) => response.json())
+      .then((data) => setUser(data.cardWithTag));
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+  return (
+    <>
+      {user &&
+        user.length > 0 &&
+        user.map((value, index) => (
+          <div className="imgPadding">
+            <Card
+              hoverable
+              className="antdCardWTagSty"
+              cover={
+                <img className="antdImageSty" alt="example" src={value.imgs} />
+              }
+            >
+              <Tag color="black" className="compTag1">
+                {value.tag}
+              </Tag>
+              <Tag color="black" className="compTag2">
+                ONLINE
+              </Tag>
+              {/* <Meta title={props.title} description={props.desc} /> */}
+            </Card>
+            <div className="lastDivSpace">
+              <h5 className="homeHeading2">{value.title}</h5>
+              <p className="homePara">{value.desc}</p>
+            </div>
+          </div>
+        ))}
+    </>
+  );
+};
 export default CardWithTag;
